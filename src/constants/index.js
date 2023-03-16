@@ -72,18 +72,18 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -92,10 +92,10 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
     {
       name: "Three JS",
       icon: threejs,
@@ -104,67 +104,69 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
     {
-      title: "PLP-Art",
-      company_name: "HTML, CSS",
+      title: "Graphic design",
+      company_name: "Reiterer-Grafik / Verlag Ueberreuter ",
       icon: starbucks,
       iconBg: "#fff",
       date: "",
       points: [
-        "Interactive HTML and CSS art project that showcases a collection of mesmerizing artworks created using a pen brush and some water.",
-        "The project features a clean and minimalistic layout that allows the viewer to focus on the intricate details of each piece.",
-        "The project is a celebration of the beauty of traditional pen brush art, and serves as a reminder of the power of simplicity in design.",
+        "I worked as an employee for a graphic designer for a period of 6 years, during which I gained extensive experience and knowledge in the field of graphic design.",
+        " Throughout that time, I was able to develop my skills in creating visual concepts, designing layouts, and producing digital and print materials.",
+        " This experience has provided me with a strong foundation in graphic design and the ability to create impactful designs for a variety of purposes.",
       ],
     },
     {
-      title: "Liqui-Planer",
-      company_name: "Javascript",
+      title: "Web development",
+      company_name: "Harvard CS50x, Udemy, FreeCodeCamp",
       icon: tesla,
       iconBg: "#fff",
       date: "",
       points: [
-        "A powerful web application that enables users to efficiently manage their finances. ",
-        "Built using fundamental concepts of JavaScript, the project features a user-friendly interface that allows users to easily track their income, expenses, and savings.",
-        "The project showcases advanced programming techniques, such as data validation and error handling, to ensure that user data is accurately captured and processed.",
+        "I am a self-motivated individual with a passion for programming and technology. I have taken the initiative to complete various courses at Harvard in computer science, as well as other online courses.",
+        "These courses have provided me with a strong foundation in programming languages, software development, and other essential skills required in the industry",
+        "The projects below showcase advanced programming techniques, such as data validation and error handling, aswell as appealing visuals",
       ],
     },
-    {
-      title: "ToDo-React",
-      company_name: "React, Tailwindcss",
-      icon: shopify,
-      iconBg: "#fff",
-      date: "",
-      points: [
-        "'ToDo-React' is a beautifully designed web application that allows users to manage their daily tasks and stay organized. ",
-        "The project is built using React and styled with TailwindCSS, creating an intuitive and user-friendly interface.",
-        "Users can add, toggle, and delete tasks on their to-do list with ease, and the app displays the number of remaining tasks in real-time.",
-        "The project utilizes the power of React and its hooks, such as useState and useRef, to manage the state and interact with the DOM. ",
-      ],
-    },
-    {
-      title: "3D Portfolio",
-      company_name: "React, Vite, Tailwind and three.js",
-      icon: meta,
-      iconBg: "#fff",
-      date: "",
-      points: [
-        "The homepage features various interactive 3D models, allowing users to explore your work from all angles and perspectives. ",
-        "The website is designed with the user in mind, making it easy for visitors to navigate and find the information they need.",
-        "It includes practical features such as the timeline you see right now, complete with interactive elements for each entry. ",
-        "The website is responsive and mobile-friendly, ensuring that it looks great on any device.",
-      ],
-    },
+
+
+    // {
+    //   title: "ToDo-React",
+    //   company_name: "React, Tailwindcss",
+    //   icon: shopify,
+    //   iconBg: "#fff",
+    //   date: "",
+    //   points: [
+    //     "'ToDo-React' is a beautifully designed web application that allows users to manage their daily tasks and stay organized. ",
+    //     "The project is built using React and styled with TailwindCSS, creating an intuitive and user-friendly interface.",
+    //     "Users can add, toggle, and delete tasks on their to-do list with ease, and the app displays the number of remaining tasks in real-time.",
+    //     "The project utilizes the power of React and its hooks, such as useState and useRef, to manage the state and interact with the DOM. ",
+    //   ],
+    // },
+    // {
+    //   title: "3D Portfolio",
+    //   company_name: "React, Vite, Tailwind and three.js",
+    //   icon: meta,
+    //   iconBg: "#fff",
+    //   date: "",
+    //   points: [
+    //     "The homepage features various interactive 3D models, allowing users to explore your work from all angles and perspectives. ",
+    //     "The website is designed with the user in mind, making it easy for visitors to navigate and find the information they need.",
+    //     "It includes practical features such as the timeline you see right now, complete with interactive elements for each entry. ",
+    //     "The website is responsive and mobile-friendly, ensuring that it looks great on any device.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -196,67 +198,60 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Liqui-Planer",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A powerful web application that enables users to efficiently manage their finances. The project features a user-friendly interface that allows users to easily track their income, expenses, and savings.",
       tags: [
         {
-          name: "react",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://jesuslovesshiva.github.io/Liquid-Planer/",
     },
     {
-      name: "Job IT",
+      name: "PLP-Art",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Interactive HTML and CSS art project that showcases a collection of my artworks. The project is a celebration of the beauty of traditional pen brush art, and serves as a reminder of the power of simplicity in design.",
       tags: [
         {
-          name: "react",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "HTML",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "CSS",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://jesuslovesshiva.github.io/PLP-Art/",
     },
     {
-      name: "Trip Guide",
+      name: "ToDo-React",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Simple ToDo-list that allows users to manage their daily tasks and stay organized.The project is built using React and styled with TailwindCSS, creating an intuitive and user-friendly interface.",
       tags: [
         {
-          name: "nextjs",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "React",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tailwind",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://jesuslovesshiva.github.io/Todo-React/",
     },
   ];
   

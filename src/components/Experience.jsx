@@ -10,49 +10,51 @@ import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
   // set the link based on the title
-  let link = '';
-  switch(experience.title) {
-    case 'PLP-Art':
-      link = 'https://jesuslovesshiva.github.io/PLP-Art/';
-      break;
-    case 'Liqui-Planer':
-      link = 'https://jesuslovesshiva.github.io/Liquid-Planer/';
-      break;
-    case 'ToDo-React':
-      link = 'https://jesuslovesshiva.github.io/Todo-React/';
-      break;
-    case '3D Portfolio':
-      link = 'https://jesuslovesshiva.github.io/3d_portfolio/';
-      break;
-    default:
-      break;
-  }
+  // let link = '';
+  // switch(experience.title) {
+  //   case 'PLP-Art':
+  //     link = 'https://www.ueberreuter.at/';
+  //     break;
+  //   case 'Liqui-Planer':
+  //     link = 'https://www.edx.org/course/introduction-computer-science-harvardx-cs50x';
+  //     break;
+  //   case 'ToDo-React':
+  //     link = 'https://www.edx.org/course/introduction-computer-science-harvardx-cs50x';
+  //     break;
+  //   case '3D Portfolio':
+  //     link = 'https://www.edx.org/course/introduction-computer-science-harvardx-cs50x';
+  //     break;
+  //   default:
+  //     break;
+  //     <a href={link} target="_blank" rel="noopener noreferrer">    </a> // for title
+
+  // <a href={"https://www.ueberreuter.at/"} target="_blank" rel="noopener noreferrer"></a>
+  // <span className="absolute -bottom-1 left-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
+  // <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
+  // }
 
   return (
     <VerticalTimelineElement
       contentStyle={{ background: '#1d1836', color: '#fff' }}
-      contentArrowStyle={{ borderRight: '7px solid #232631' }}
+      contentArrowStyle={{ borderRight: '7px solid #48D1CC' }}
       date={experience.date }
       iconStyle={{ background: experience.iconBg }}
       icon={
-  <div className="flex justify-center items-center w-full h-full scale-110 hover:scale-125">
-    <a href={link} target="_blank" rel="noopener noreferrer">
+  <div className="flex justify-center items-center w-full h-ful hover:scale-125 border-cyan-700  border-4 rounded-full">
       <img 
         src={experience.icon} 
         alt={experience.company_name}
-        className="w-[90%] h-[90%] object-contain rounded-full" />
-    </a>
+        className="w-[100%] h-[90%] object-contain rounded-full" />
+
   </div>
 }
     >
       <div>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <h3 className="text-[24px] font bold text-cyan-500 relative">
+
+          <h3 className="text-[24px] font bold text-cyan-500 relative cursor-default">
             <span className="transition-all duration-300 hover:text-cyan-200">{experience.title}</span>
-            <span className="absolute -bottom-1 left-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
-            <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
           </h3>
-        </a>
+        
         <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
           {experience.company_name}
         </p>
@@ -76,7 +78,7 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>Work & Education.</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

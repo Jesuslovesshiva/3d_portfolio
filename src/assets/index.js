@@ -19,16 +19,16 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 
 import meta from "./company/dragonhunter5_webicon.jpg";
 import shopify from "./company/dragonhunter4_webicon.jpg";
 import starbucks from "./company/dragonhunter1_webicon.jpg";
 import tesla from "./company/dragonhunter2_webicon.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import carrent from "./Liqui-planer.jpg";
+import jobit from "./PLP-Art.jpg";
+import tripguide from "./ToDo-React.jpg";
 
 export {
   logo,
