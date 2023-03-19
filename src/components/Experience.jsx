@@ -9,29 +9,6 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
-  // set the link based on the title
-  // let link = '';
-  // switch(experience.title) {
-  //   case 'PLP-Art':
-  //     link = 'https://www.ueberreuter.at/';
-  //     break;
-  //   case 'Liqui-Planer':
-  //     link = 'https://www.edx.org/course/introduction-computer-science-harvardx-cs50x';
-  //     break;
-  //   case 'ToDo-React':
-  //     link = 'https://www.edx.org/course/introduction-computer-science-harvardx-cs50x';
-  //     break;
-  //   case '3D Portfolio':
-  //     link = 'https://www.edx.org/course/introduction-computer-science-harvardx-cs50x';
-  //     break;
-  //   default:
-  //     break;
-  //     <a href={link} target="_blank" rel="noopener noreferrer">    </a> // for title
-
-  // <a href={"https://www.ueberreuter.at/"} target="_blank" rel="noopener noreferrer"></a>
-  // <span className="absolute -bottom-1 left-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
-  // <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
-  // }
 
   return (
     <VerticalTimelineElement
@@ -93,3 +70,33 @@ const Experience = () => {
 }
 
 export default SectionWrapper(Experience, "work");
+
+// set up links
+
+  // set the link based on the title
+
+  // let link = '';
+  // switch(experience.title) {
+  //   case 'PLP-Art':
+  //     link = 'https://www.blabla.at/';
+  //     break;
+  //   case 'Liqui-Planer':
+  //     link = 'https://www.blabla.at/';
+  //     break;
+  //   case 'ToDo-React':
+  //     link = 'https://www.blabla.at/';
+  //     break;
+  //   case '3D Portfolio':
+  //     link = 'https://www.blabla.at/';
+  //     break;
+  //   default:
+  //     break;
+  
+  // }
+// for logo
+// <a href={link} target="_blank" rel="noopener noreferrer">    </a> 
+
+// for h3
+// <a href={"https://www.blabla.at/"} target="_blank" rel="noopener noreferrer"></a>
+// <span className="absolute -bottom-1 left-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
+// <span className="absolute -bottom-1 right-1/2 w-0 transition-all duration-300 h-1 bg-cyan-200"></span>
