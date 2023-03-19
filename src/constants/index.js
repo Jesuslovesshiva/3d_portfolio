@@ -172,26 +172,26 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
+        "I thought it was impossible to make a website as beautiful as our product, but Daniel proved me wrong.",
+      name: "Lena Astrid",
       designation: "CFO",
-      company: "Acme Co",
+      company: "ZestSolutions",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "I've never met a graphic designer who truly cares about their clients' success like Daniel does.",
+      name: "Patrick Werner",
       designation: "COO",
-      company: "DEF Corp",
+      company: "Egeeks",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "We are incredibly grateful to Daniel for his inputs and for optimizing our website. Grātiās tibi agō.",
       name: "Lisa Wang",
       designation: "CTO",
-      company: "456 Enterprises",
+      company: "SpineLabs",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
