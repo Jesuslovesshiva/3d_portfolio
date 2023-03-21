@@ -17,6 +17,8 @@
     "framer-motion": "^10.2.5",
     "maath": "^0.5.2",
     "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-cookie-banner": "^4.1.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.118",
     "react-router-dom": "^6.9.0",
