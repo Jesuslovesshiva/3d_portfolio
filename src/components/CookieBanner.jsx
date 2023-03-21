@@ -1,7 +1,6 @@
 import React from 'react';
 import { useCookies } from 'react-cookie';
 import CookieBanner from 'react-cookie-banner';
-import cloneWithProps from 'react-addons-clone-with-props';
 
 const CookieBannerComponent = () => {
   const [cookies, setCookie] = useCookies(['3dportfolio-view-tracking-analytics-v1']);
