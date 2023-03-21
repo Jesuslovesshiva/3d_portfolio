@@ -2,11 +2,13 @@ import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import CookieBannerComponent from "./components/cookiebanner.jsx";
+import { CookiesProvider } from 'react-cookie';
 
 
 const App = () => {
   return (
     <BrowserRouter>
+    <CookiesProvider />
       <div className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <CookieBannerComponent />
