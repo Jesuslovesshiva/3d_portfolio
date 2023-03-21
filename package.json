@@ -22,6 +22,7 @@
     "react-cookie": "^4.1.1",
     "react-cookie-banner": "^4.1.0",
     "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11",
     "react-parallax-tilt": "^1.7.118",
     "react-router-dom": "^6.9.0",
     "react-vertical-timeline-component": "^3.6.0",
