@@ -1,32 +1,40 @@
 import React from 'react';
-import { useCookies } from 'react-cookie';
-import CookieBanner from 'react-cookie-banner';
+import PropTypes from 'prop-types';
+import { Button, Typography, Link } from '@material-ui/core';
 
-const CookieBannerComponent = () => {
-  const [cookies, setCookie] = useCookies(['3dportfolio-view-tracking-analytics-v1']);
-
-  const handleAccept = () => {
-    // Set the '3dportfolio-view-tracking-analytics' cookie to true
-    setCookie('3dportfolio-view-tracking-analytics-v1', true, { path: '/' });
-
-    // Load the Google Tag Manager script
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TZM2M2P');
-  };
-
-  // Clone the CookieBanner element and add a custom class
-  const clonedElement = cloneWithProps(<CookieBanner />, { className: 'my-custom-class' });
+const CookieBanner = (props) => {
+  const { message, linkText, linkUrl, buttonClasses, onAccept, onReject } = props;
 
   return (
-    <>
-      <CookieBanner
-        message="This website uses cookies to improve your experience."
-        buttonMessage="Accept"
-        onAccept={handleAccept}
-        cookie="3dportfolio-view-tracking-analytics-v1"
-      />
-      {clonedElement}
-    </>
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-gray-900 py-3 px-4 md:py-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between">
+      <div className="flex items-center mb-2 md:mb-0">
+        <Typography variant="body2" className="mr-2">{message}</Typography>
+        {linkText && linkUrl && (
+          <Link href={linkUrl} target="_blank" rel="noopener noreferrer" className="text-primary">
+            <Typography variant="body2">{linkText}</Typography>
+          </Link>
+        )}
+      </div>
+      <div className="flex items-center">
+        <Button variant="contained" color="primary" className={buttonClasses} onClick={onAccept}>
+          Accept
+        </Button>
+        <div className="w-2"></div>
+        <Button variant="contained" color="secondary" className="ml-2" onClick={onReject}>
+          Reject
+        </Button>
+      </div>
+    </div>
   );
 };
 
-export default CookieBannerComponent;
+CookieBanner.propTypes = {
+  message: PropTypes.string.isRequired,
+  linkText: PropTypes.string,
+  linkUrl: PropTypes.string,
+  buttonClasses: PropTypes.string,
+  onAccept: PropTypes.func.isRequired,
+  onReject: PropTypes.func.isRequired,
+};
+
+export default CookieBanner;
